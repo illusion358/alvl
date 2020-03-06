@@ -1,0 +1,129 @@
+html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+     display: block;
+    }
+    body {
+     line-height: 1;
+    }
+    ol, ul {
+     list-style: none;
+    }
+    blockquote, q {
+     quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+     content: '';
+     content: none;
+    }
+    table {
+     border-collapse: collapse;
+     border-spacing: 0;
+    }
+    body{
+      background-color: aqua;  
+    }
+    span {
+        background-color: yellow;
+    }
+    .box1 {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    margin: 100px 0 0 100px;
+    background: yellow;
+}
+/*    .box1 span{
+        display: inline-block;
+        background-color: blue;
+        padding: 10px 20px;
+    }*/
+/*    div[class]{
+        display: inline;
+    }*/
+    .box1 span:first-child{
+        background-color: red;
+/*        float: right;
+*/        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+        z-index: 1;
+    }
+    .box1 span:nth-child(2){
+        background-color: green;
+        width: 200px;
+        height: 200px;
+        top: 10px;
+        left: 10px;
+    }
+    .box1 span:last-child{
+        background-color: gray;
+        width: 200px;
+        height: 100px;
+        right: 10px;
+        bottom: 10px;
+    }
+    img{
+        position: fixed;
+        display: none;
+    }
+ /*   .box2{
+        float: right;
+        position: relative;
+    }
+*/
+.box1 span{
+    display: block;
+    position: absolute; 
+}
+.list > li{
+    display: inline-block;
+    }
+.list>li>a {
+    display: block;
+    background: red;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+}   
+li {
+    position: relative;
+}
+.mini-list {
+    position: absolute;
+    left: 0;
+    background: green;
+    bottom: 100%;
+}
+.mini-list>li>a {
+   background: yellow;
+   padding: 5px 15px;
+   text-decoration: none;
+   color: red;
+   display: block;
+}
+.mini-list>li {
+    padding: 2px;
+}
